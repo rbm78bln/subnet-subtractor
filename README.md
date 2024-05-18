@@ -2,8 +2,8 @@
 A tool for subtracting sets of subnets from each other
 
 ### What is this for?
-Let's say you want to create route or filewall rule that matches a certain subnet except an even smaller subnet within that range. What whould be the resulting set of subnets that matches only exactly those IPs? Yes, you can easily calculate this manually - or just use a tiny little tool, that does exactly this for you. Here you go.
-This little tool automatically splits, joins, and subtracts one set of subnets from another sets of subnets and returns the smallest set of subnets that matches exactly the given specs using the shortest network prefixes.
+Let's say you want to create a route or filewall rule that matches a certain subnet except an even smaller subnet within that range. What whould be the resulting set of subnets that matches only exactly those IPs? Yes, you can easily calculate this manually - or just use a tiny little tool, that does exactly this for you. Here you go.
+This little tool automatically splits, joins, and subtracts one set of subnets from another set of subnets and returns the smallest set of subnets that matches exactly the given specs using the shortest network prefixes.
 
 ### Can it do IPv6 as well?
 Actually it can only do IPv6 underneath the hood, yet it even nicely handles IPv4 for convenience.

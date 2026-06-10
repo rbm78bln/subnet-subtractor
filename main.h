@@ -3,6 +3,8 @@
 #include <string>
 #include <vector>
 #include <iostream>
+#include <stdexcept>
+#include <cstring>
 #include <bits/stdc++.h>
 #include <arpa/inet.h> // For inet_pton
 #include <netinet/in.h> // For sockaddr_in

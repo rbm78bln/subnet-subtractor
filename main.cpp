@@ -328,10 +328,12 @@ int main(int argc, char* argv[]) {
                 included_subnets.push_back(Subnet::parseCidr("fc00::/7"));
                 break;
         }
-        optimizeSubnets(included_subnets);
     }
 
     flushExcludedSubnets();
+
+    // Ensure final result is normalized before presentation
+    optimizeSubnets(included_subnets);
 
     // Sort calculated subnets nicely for printing
     std::sort(included_subnets.begin(), included_subnets.end(), Subnet::sortPrintNicely);
